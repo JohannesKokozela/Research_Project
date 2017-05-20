@@ -1,0 +1,739 @@
+2017-02-20  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION: New version is 0.10-38.
+
+	* R/*.R:
+	* src/*c:
+	Improve registration of native routines.
+
+2017-01-17  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION: New version is 0.10-37.
+
+	* R/*.R:
+	* src/*c:
+	Register native routines.
+
+2016-12-15  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION: New version is 0.10-36.
+
+	* R/finance.R (get.hist.quote):
+	* man/get.hist.quote.Rd:
+	Drop support for archived 'its' package.
+
+2016-12-08  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* inst/CITATION: Canonicalize CRAN URLs.
+
+2016-05-02  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-35.
+
+	* R/test.R: Data frames are not univariate time series.
+	Spotted by szolaryb <szolaryb@gmail.com>.
+
+2016-04-28  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* R/finance.R (get.hist.quote):
+	* man/get.hist.quote.Rd:
+	OANDA now needs https at least for URL connections.
+	Spotted by Paul Gilbert <pgilbert@ncf.ca>.
+
+2016-01-06  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* inst/CITATION: Avoid personList().
+
+2015-02-20  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-34.
+
+	* R/finance.R (get.hist.quote): Fix problems with new oanda format
+	reported by Bert Tijhuis <bert.tijhuis@xs4all.nl>.
+
+2015-02-10  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-33.
+
+	* R/finance.R: Change get.hist.quote() to use new oanda URL and
+	file format.
+
+2013-05-07  Adrian Trapletti  <adrian@trapletti.org>
+
+	* DESCRIPTION (Version): New version is 0.10-32.
+
+	* README: Update contributers.
+
+	* R/test.R (adf.test, pp.test, kpss.test):
+	Convert time series argument in order to correctly handle xts
+	inputs as pointed out by Matthieu Stigler.
+
+2013-04-16  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-31.
+
+	* src/dsumsl.f: Fix array bounds declarations.
+
+2012-11-13  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-30.
+
+	* DESCRIPTION (Depends, Imports):
+	* NAMESPACE:
+	* man/get.hist.quote.Rd:
+	* man/portfolio.optim.Rd:
+	Improve imports, and remove package depends.
+
+2012-07-07  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-29.
+
+	* R/finance.R (get.hist.quote): Protect against duplicated entries
+	as suggested by AZ.
+
+2012-02-21  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-28.
+
+	* R/finance.R (get.hist.quote): Try yahoo 5 times before giving up.
+
+2012-02-20  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* man/get.hist.quote.Rd: Make example more robust re availability
+	of web services.
+
+2011-10-23  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-27.
+
+	* R/finance.R (portfolio.optim.default):
+	Portfolio returns should be a vector (not a matrix).
+
+2011-08-09  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-26.
+
+	* R/zzz.R (.onAttach): Improvements.
+
+	* R/arma.R (arma.init):
+	* R/finance.R (portfolio.optim.default:
+	* R/irts.R (irts, read.irts, plot.irts):
+	* R/tsutils.R (quadmap):
+	Use '&&' and '||' in if() conditions.
+	Suggested by Tim Hesterberg <rocket@google.com>.
+
+2011-02-07  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-25.
+	(Depends): Require R >= 2.10.0.
+
+	* data: Replace *.R files by *.rda files.
+
+2010-12-07  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-24.
+
+	* R/finance.R (plotOHLC): Cosmetics.
+
+2010-11-14  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-23.
+
+	* R/tsutils.R (quadmap): Fix typo spotted by Breno Neri
+	<breno.neri@credit-suisse.com>.
+
+2009-11-22  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-22.
+
+	* R/finance.R (portfolio.optim.default, get.hist.quote):
+	Simplify/improve run-time depends.
+
+2009-10-04  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-21.
+
+	* man/portfolio.optim.Rd: Enhance example (suggestion by Dirk
+	Eddelbuettel <edd@debian.org>).
+
+2009-09-10  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-20.
+
+	* inst/CITATION: Improve.
+
+2009-08-31  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-19.
+
+	* man/get.hist.quote.Rd: Rd fixes.
+
+2009-02-05  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-18.
+
+	* inst/CITATION: Improve.
+
+2009-01-11  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-17.
+
+	* man/get.hist.quote.Rd: OANDA now allows for time periods of at
+	most 500 days.
+
+2008-07-18  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-16.
+
+	* R/finance.R (get.hist.quote): Apparently OANDA has switched to
+	using years without centuries (spotted by Martin Becker
+	<martin.becker@mx.uni-saarland.de>).
+
+2008-05-08  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-15.
+
+	* R/finance.R (get.hist.quote): Improve determining when OANDA
+	provides no data (spotted by Ajay Shah <ajayshah@mayin.org>).
+
+2008-02-26  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-14.
+
+2008-02-09  Achim Zeileis  <Achim.Zeileis@R-project.org>
+
+	* R/garch.R: changed handling of control arguments for
+	  garch(), new garch.control() function,
+	  added new vcov() method.
+	* src/garch.c: de-coupled single eps tolerance into
+	  four different tolerance parameters.
+	* man/garch.Rd: all control arguments now collected in
+	  garch.control(), re-named (similar to optim arguments),
+	  de-coupled tolerance parameters, return value has
+	  vcov instead of asy.se.coef.
+	* man/garch-methods.Rd: new vcov method.
+	* R/arma.R: new vcov() method
+	* man/arma.Rd: return value has vcov instead of asy.se.coef.
+	* man/arma-methods.Rd: new vcov method.
+	* NAMESPACE: new vcov() methods
+
+2007-12-13  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-13.
+
+	* src/dsumsl.f:
+	* src/formats.c:
+	Fixes for FORTRAN I/O problems, contributed by Brian Ripley.
+
+	* data/00Index:
+	* man/tseries-internal.Rd:
+	Removed.
+
+2007-11-04  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-12.
+
+	* R/finance.R (get.hist.quote): OANDA enhancements.
+
+2007-02-20  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-11.
+
+	* data/ice.river.R: Update by kindly provided by Rob Hyndman
+	<Rob.Hyndman@buseco.monash.edu.au>.
+
+2007-02-11  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-10.
+
+	* R/finance.R (get.hist.quote): Adjust for Yahoo's change its CSV
+	files to use standard %Y-%m-%d dates.
+
+2007-02-01  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-8.
+
+	* inst/CITATION: Get date/year and version from the package
+	metadata.
+
+2006-10-04  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-7.
+	(License): Standardize.
+	* COPYING: Removed.
+
+2006-09-10  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-6.
+	(Imports): Add graphics and utils.
+
+2006-09-09  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* NAMESPACE: Import graphics and utils.
+
+2006-09-07  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-5.
+	(Imports): Add utils.
+
+	* NAMESPACE: Add some imports from utils.
+
+	* R/zzz.R: .First.lib needs to be .onAttach.
+
+2006-08-11  Achim Zeileis  <Achim.Zeileis@R-project.org>
+
+	* DESCRIPTION: added "stats" dependency, new version
+	is 0.10-4.
+	* NAMESPACE: added import("stats")
+
+2006-06-27  G. Grothendieck <ggrothendieck@gmail.com>
+
+	* R/finance.R (get.hist.quote)
+	* man/get.hist.quote.Rd:
+	added 'drop=' argument to get.hist.quote.  Defaults to FALSE
+	(i.e., previous behavior).
+
+2006-06-26  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-2.
+
+	* inst/CITATION: New file.
+
+2006-05-10  Achim Zeileis  <Achim.Zeileis@R-project.org>
+
+	* DESCRIPTION (Version): New version is 0.10-1.
+
+2006-05-09  Achim Zeileis  <Achim.Zeileis@R-project.org>
+
+	* R/finance.R (get.hist.quote)
+	* man/get.hist.quote.Rd:
+	handled 'method' argument as in download.file(), so 
+	that it can be set via options(download.file.method = "...")
+
+2006-04-07  Achim Zeileis  <Achim.Zeileis@R-project.org>
+
+	* R/finance.R (get.hist.quote)
+	* man/get.hist.quote.Rd:
+	added quiet argument passed on to download.file(), defaults
+	to FALSE (i.e., previous behaviour)
+
+2005-10-24  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.10-0.
+	(Depends): Require R >= 2.2.0.
+
+	* NAMESPACE: Added.
+
+	* man/irts-methods.Rd: Use \method markup for [ usage entries.
+
+2005-09-07  Achim Zeileis  <Achim.Zeileis@R-project.org>
+
+	* DESCRIPTION (Version): New version is 0.9-30,
+	Depends on zoo, suggests its.
+	* R/finance.R (get.hist.quote): can return now "zoo", "ts" and
+	"its" series.
+	* man/get.hist.quote.Rd: added retclass argument.
+	* man/plotOHLC.Rd: adapted to get.hist.quote().
+
+2005-09-06  Adrian Trapletti  <a.trapletti@swissonline.ch>
+
+	* README: Update contributers.
+	* R/finance.R (get.hist.quote):
+	* man/get.hist.quote.Rd:
+	Improved error messages and documentation.
+
+2005-09-03  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-29.
+	* R/finance.R (get.hist.quote):
+	* man/get.hist.quote.Rd:
+	New provider 'oanda' to get.hist.quote() [by A Trapletti].
+
+2005-08-29  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-28.
+
+2005-08-28  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* man/irts-methods.Rd: Link to plot.ts rather than the defunct
+	plot.mts (spotted by BDR).
+
+2005-04-20  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-26.
+
+	* src/Makevars: New file.
+
+	* src/dsumsl.f:
+	Convert from FORTRAN 66 to FORTRAN 77 as per instructions.
+	Remove code for D1MACH/I1MACH (in R) and the BLAS subroutines
+	DCOPY and DDOT.
+
+2005-04-01  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-25.
+
+	* R/finance.R (get.hist.quote): Use Date rather than POSIXct,
+	suggested by Gabor Grothendieck <ggrothendieck@myway.com>.
+
+2004-11-12  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-24.
+
+	* R/finance.R (get.hist.quote): 
+	* man/get.hist.quote.Rd:
+	Add argument 'compression' to get.hist.quote(), provided by BBands
+	<BBands@bollingerbands.com>.
+
+2004-08-05  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-23.
+
+	* data/*.R: 
+	Remove explicit calls to require() for package stats, and instead
+	use stats::ts() to ensure that stats gets attached.
+
+2004-07-20  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-22.
+
+	* man/get.hist.quote.Rd: 
+	* man/plotOHLC.Rd: 
+	Change symbol for S&P 500 from ^spc to ^gspc, argh.
+	Try wrapping examples inside a suitable test for connectivity to
+	quote.yahoo.com rather than \dontrun{}, so that we can figure out
+	when examples fail more easily.
+
+2004-03-23  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-20.
+
+	* R/finance.R (portfolio.optim.default): 
+	* R/test.R (white.test.default, white.test.ts): 
+	* R/zzz.R (.First.lib):
+	Adjust for changes in R 1.9.0.
+
+2004-01-31  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-19.
+
+	* INDEX: Removed.
+
+2003-12-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version): New version is 0.9-18.
+	
+	* R/finance.R (plotOHLC): Use segments() with vector arguments.
+
+2003-11-06  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-17.
+	
+	* man/summary.garch.Rd: 
+	* man/summary.arma.Rd: 
+	Fix codoc default value problem/typo.
+
+2003-10-10  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-16.
+
+	* R/arma.R (print.summary.arma): 	
+	* R/garch.R (print.summary.garch): 
+	* man/arma-methods.Rd: 
+	* man/garch-methods.Rd: 
+	* man/summary.arma.Rd: 	
+	* man/summary.garch.Rd: 
+	print.coefmat() is deprecated and replaced by printCoefmat() in R
+	1.8.
+
+2003-08-27  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-15.	
+
+	* README: Cosmetic change.
+	
+	* R/finance.R (get.hist.quote): Treat the case when the 
+	submitted data from Yahoo contains information concerning
+	dividends (problem and solution reported by Achmim Zeileis 
+	<zeileis@ci.tuwien.ac.at>).
+	
+2003-07-09  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-14.	
+
+	* R/finance.R (plotOHLC): Correct bug when setting the ylim
+	argument (reported by Dirk Eddelbuettel).
+
+	* R/irts.R:
+	* man/irts-functions.Rd: rename function interpolate to
+	approx.irts.
+
+2003-07-08  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-13.
+
+	* man/arma-methods.Rd: 
+	* man/garch-methods.Rd: 
+	Remove over-documented argument 'signif.stars' from \arguments.
+
+2003-06-06  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-12.
+
+	* R/finance.R (get.hist.quote): Work around addressed in 0.9-11
+	was not good enough.
+
+2003-04-22  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-11.
+
+	* R/finance.R (get.hist.quote): Work around a problem in 1.7.0
+	(PR#2815 and also reported by Lars W. Hansen <lwhansen@usa.net>).
+
+2003-03-04  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-10.	
+	
+	* R/finance.R: change check for the case of an unknown quote.
+
+	* man/arma-methods.Rd
+	* man/garch-methods.Rd
+	* man/plotOHLC.Rd
+	* man/portfolio.optim.Rd
+	* man/read.ts.Rd
+	* man/seqplot.ts.Rd
+	* man/surrogate.Rd
+	* man/terasvirta.test.Rd
+	* man/white.test.Rd: cosmetic changes.
+	
+	* R/irts.R:
+	* man/irts-functions.Rd:
+	* man/irts-methods.Rd:
+	* man/irts.Rd: add new class for irregularly spaced 
+	time-series.
+	
+2003-02-19  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-9.	
+
+	* README: update.
+	
+        * R/finance.R:
+	* man/plotOHLC.Rd: add new argument origin such that 
+	it works smoothly together with get.hist.quote() (problem 
+	spotted by Michael Parzen <fmparzen@gsb.uchicago.edu>).
+
+2003-02-05  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-8.	
+
+	* README: cleanup.
+	
+	* R/finance.R
+	* man/get.hist.quote.Rd: add new argument origin and change 
+	YAHOO query (it seems that YAHOO has slightly changed the query 
+	syntax to access historical data).  
+
+	* R/garch.R
+	* man/garch-methods.Rd: add new method logLik.garch.
+
+	* man/garch.Rd: cosmetic change.
+	
+2003-01-22  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-7.
+
+	* R/tsutils.R (print.resample.statistic): Call print with named
+	'digits' argument [S4 method dispatch].
+
+2002-11-22  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-6.
+
+	* R/garch.R (garch): Also had .C("pred_garch") without 'genuine'.
+	Guess to use FALSE here.
+
+2002-11-21  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.9-5.
+
+	* R/garch.R (predict.garch): .C("pred_garch") needs to pass
+	'genuine' as well (spotted by Fan <xiao.gang.fan1@libertysurf.fr>
+	and Duncan Murdoch <dmurdoch@pair.com>).
+
+2002-09-09  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-3.	
+
+	* INDEX:
+	* README: cleanup and update.
+
+	* man/garch.Rd
+	* man/bds.test.Rd: correct bugs in documentation.
+
+	* man/tsbootstrap.Rd: improve documentation.
+
+	* man/runs.test.Rd:
+	* R/test.R: new implementation of runs.test which was wrong
+	for versions <= 0.9-2.
+
+2002-06-28  Kurt Hornik  <Kurt.Hornik@wu-wien.ac.at>
+
+	* DESCRIPTION: New version is 0.9-2.
+
+	* R/garch.R (garch): Replace Machine() by .Machine as the former
+	is deprecated in R 1.6.
+
+2002-06-19  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-1.	
+
+	* INDEX:
+	* TITLE:
+	* R/zzz.R: Cleanup and cosmetic changes.
+
+	* man/maxdrawdown.Rd:
+	* man/sharpe.Rd:
+	* man/sterling.Rd:
+	* R/finance.R: Improved version of maxdrawdown 
+	and new functions sharpe and sterling.
+	
+2002-04-26  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.9-0.	
+
+	* man/amif.Rd:
+	* man/plot.amif.Rd:
+	* R/cor.R:
+	* misc/README:
+	* misc/mutinfo-1.21b.tar.gz
+	* src/tsutils.c: Removed non-GPL code.
+	
+	* man/bootstrap.Rd:
+	* man/surrogate.Rd:
+	* man/tsbootstrap.Rd:
+	* R/tsutils.R: Improved version of time series 
+	bootstrap which allows a block of blocks bootstrap. 
+	The function bootstrap is renamed to tsbootstrap.
+
+	* DESCRIPTION:
+	* README: Cleanup.
+
+	* man/arma.Rd: Cosmetic change.
+	
+2001-11-30  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.8-4.	
+
+	* man/plotOHLC.Rd: Improve documentation.
+	
+	* R/zzz.R: Cosmetic change.
+	
+2001-11-08  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.8-3.
+
+	* man/bootstrap.Rd:
+	* R/tsutils.R:
+	* src/boot.c:
+	Improve documentation, error messages, and code.
+
+2001-10-29  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.8-2.
+	
+	* man/get.hist.quote.Rd:
+	* R/finance.R:
+	Change default value for argument 'quote' of 'get.hist.quote()'.
+
+	* man/maxdrawdown.Rd:
+	* R/finance.R:
+	* src/tsutils.c:
+	Simpler and more informative implementation of max drawdown 
+	statistic.
+
+	* man/plotOHLC.Rd:
+	* R/finance.R: 
+	New function which plots open-high-low-close bar charts.
+	
+2001-10-18  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION: Cleanup. New version is 0.8-1.
+	
+	* README: Cleanup.
+
+2001-10-12  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.8-0.
+
+	* R/tsutils.R: Call .C with 'mode = "double"' everywhere. 
+
+	* man/maxdrawdown.Rd:
+	* R/finance.R:
+	* src/tsutils.c:
+	Fast implementation of max drawdown statistic.
+
+2001-08-27  Adrian Trapletti <a.trapletti@bluewin.ch>
+
+	* DESCRIPTION (Version): New version is 0.7-6.
+
+	* src/arma.c: Correct nasty bug concerning accessing the 
+	parameter intercept. 
+
+	* man/portfolio.optim.Rd:
+	* R/finance.R:
+	Integration of a patch of Dirk Eddelbuettel for 'portfolio.optim()' 
+	that allows inequality restrictions on the portfolio weights and 
+	a specification of the covariance matrix.
+
+2001-08-20  Kurt Hornik  <Kurt.Hornik@ci.tuwien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.7-5.
+
+	* man/tseries.internal.Rd: Renamed to tseries-internal.Rd.
+
+	* man/arma-methods.Rd:
+	* man/garch-methods.Rd:
+	* man/plot.amif.Rd:
+	* man/summary.arma.Rd:
+	* man/summary.garch.Rd:
+	New files.
+
+	* R/*.R:
+	* man/*.Rd:
+	Fix generic/method inconsistencies.
+
+2001-08-19  Kurt Hornik  <Kurt.Hornik@ci.tuwien.ac.at>
+
+	* man/tseries.internal.Rd: Change keyword 'misc' to 'internal'.
+
+	* R/tsutils.R: TnF fix.
+
+2001-07-15  Kurt Hornik  <Kurt.Hornik@ci.tuwien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.7-4.
+
+	* R/test.R: 
+	* man/terasvirta.test.Rd: 
+	* man/white.test.Rd:
+	Use 'Chisq' instead of 'chisq' for argument 'type'.
+
+2001-07-06  Kurt Hornik  <Kurt.Hornik@ci.tuwien.ac.at>
+
+	* DESCRIPTION (Depends): No longer depends on chron.
+
+	* R/finance.R: Rewrite get.hist.quote() to use R internal POSIX
+	date/time classes and allow for retrieval of several quotes and
+	volume at once.
+	* man/get.hist.quote.Rd: Changed accordingly.
+
+2001-06-18  Kurt Hornik  <Kurt.Hornik@ci.tuwien.ac.at>
+
+	* DESCRIPTION (Version): New version is 0.7-2.
+	(Depends): Redo according to R-exts.  Detailed info now in
+	'README'.
+
+	* man/na.remove.Rd: Sync code and documented usage.
+
+	* ChangeLog: finally started.
+
